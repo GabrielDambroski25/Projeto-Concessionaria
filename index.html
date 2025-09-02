@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoPrime - Venda de Carros</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+      <h1 class="logo">AutoPrime</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Estoque</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <section class="banner">
+    <div class="container banner-content">
+      <h2>Encontre seu próximo carro!</h2>
+      <p>Ofertas imperdíveis em veículos novos e seminovos.</p>
+      <a href="#" class="btn">Ver Estoque</a>
+    </div>
+  </section>
+
+  <!-- Carros em Destaque -->
+  <section class="destaques">
+    <div class="container">
+      <h3>Carros em Destaque</h3>
+      <div class="carros-grid">
+        <div class="carro-card">
+          <img src="ONIX.webp" alt="Chevrolet Onix 2022" />
+          <h4>Chevrolet Onix LTZ 2022</h4>
+          <p class="preco">R$ 65.900</p>
+        </div>
+        <div class="carro-card">
+          <img src="Volkswagen-T-Cross.png" alt="Volkswagen T-Cross 2023" />
+          <h4>T-Cross Highline 250 TSI AT</h4>
+          <p class="preco">R$ 112.000</p>
+        </div>
+        <div class="carro-card">
+          <img src="ARGO.jpg" alt="Fiat Argo 2021" />
+          <h4>Fiat Argo 2021</h4>
+          <p class="preco">R$ 59.000</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- SEÇÃO SERVIÇOS -->
+  <section class="servicos">
+    <div class="container">
+      <h3>Serviços</h3>
+      <p>Além da venda de veículos, oferecemos financiamento, consórcio, garantia estendida e suporte 
+      pós-venda completo.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 AutoPrime. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+  <div id="contatoModal" class="modal">
+    <div class="modal-content">
+      <span class="fechar">&times;</span>
+      <h3>Entre em Contato</h3>
+      <ul>
+        <li><a href="https://instagram.com/seuInstagram" target="_blank">📷 Instagram</a></li>
+        <li><a href="https://wa.me/seuNumero" target="_blank">💬 WhatsApp</a></li>
+        <li><a href="https://facebook.com/seuFacebook" target="_blank">📘 Facebook</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    // Seleciona os elementos
+    const modal = document.getElementById("contatoModal");
+    const btn = document.querySelector("nav ul li a[href='#contato']");
+    const span = document.querySelector(".fechar");
+
+    // Abre modal ao clicar em "Contato"
+    btn.onclick = function(e) {
+      e.preventDefault();
+      modal.style.display = "flex";
+    }
+
+    // Fecha modal ao clicar no X
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    // Fecha modal ao clicar fora
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>
