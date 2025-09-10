@@ -20,6 +20,6 @@ Página de Confirmação (Obrigado.html): mensagem de sucesso ao enviar formulá
 
 Tecnologias utilizadas:
 
-HTML5
+HTML
 
-CSS3
+CSS
