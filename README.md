@@ -8,7 +8,7 @@ Um site fictício de venda de carros, criado como projeto de estudos em HTML e C
 
 Funcionalidades:
 
-Página inicial: apresentação com destaque visual da marca.
+Página inicial: apresentação com destaque visual do site.
 
 Catálogo de Carros: listagem de modelos disponíveis com informações básicas.
 
