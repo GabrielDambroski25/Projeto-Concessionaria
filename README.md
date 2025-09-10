@@ -1,6 +1,6 @@
                                                                       Site Max Carros
 
-Desenvolvimento de website fictício de concessionária para trabalho avaliativo realizado na faculdade de Engenharia de Software 2º Período - Linguagem de Programação para Web - UniGuairacá.
+Desenvolvimento de website fictício de concessionária para trabalho avaliativo realizado na faculdade de Analise e Desenvolvimento 2º Período - Linguagem de Programação para Web - UniGuairacá.
 
 Objetivo:
 
