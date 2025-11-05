@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Confirmação - MaxCarros</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      text-align: center;
+      padding: 40px;
+    }
+    .card {
+      background: white;
+      max-width: 500px;
+      margin: auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Confirme seus dados</h2>
+    <p><strong>Nome:</strong> <span id="nome"></span></p>
+    <p><strong>E-mail:</strong> <span id="email"></span></p>
+    <p><strong>Mensagem:</strong></p>
+    <p id="mensagem"></p>
+    <button onclick="confirmar()">Confirmar Envio</button>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    document.getElementById('nome').textContent = params.get('nome');
+    document.getElementById('email').textContent = params.get('email');
+    document.getElementById('mensagem').textContent = params.get('mensagem');
+
+    function confirmar() {
+      alert('Mensagem enviada com sucesso!');
+      window.location.href = 'index.html';
+    }
+  </script>
+</body>
+</html>
